@@ -250,6 +250,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     height: 100%;
+    justify-content: center;
 }
 
 .fixText {
@@ -259,7 +260,7 @@ body {
 
 .fixButton {
     align-self:flex-end;
-    width: 100%;
+    width: 90%;
 }
 
 .cardBody{ 
