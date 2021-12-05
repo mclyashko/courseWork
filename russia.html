@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+	<!-- Style -->
+
+	<link rel="stylesheet" href="./css/style.css">
+
+	<!-- Favicon -->
+
+	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+    <!-- CSS only -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+	<title>Современные процессоры</title>
+</head>
+<body class="mb-n4">
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" id="brand" href="index.html">
+                    <img src="images/cpu1.png" alt="" width="50px" height="50px">
+                </a>
+                <a class="navbar-brand" href="index.html">AllAboutCPUs</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="examples.html">Представители</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="architecture.html">Архитектуры</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="russia.html">Отечественные разработки</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">О сайте</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Поиск по сайту" aria-label="Search" style="visibility: hidden;">
+                        <button class="btn btn-outline-success" type="submit" style="visibility: hidden;">Поиск</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="bg-dark text-white" id="myData1">
+        <div class="container">
+            <h2>Российские микропроцессоры и компании, проектирующие их</h2>
+            <div id="changePadding2">
+                <div class="d-flex flex-column flex-sm-column flex-md-row flex-lg-row flex-xl-row flex-xxl-row item1m">
+                    <div class="col-auto col-sm-auto col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <div class="wrapMe myItem">
+                            <p>
+                                В России работают четыре основных производителя процессоров: МЦСТ, «Байкал Электроникс», 
+                                НПЦ «Элвис» и НТЦ «Модуль». Они выпускают разные по архитектуре и 
+                                предназначению решения, которые доступны на рынке. Тем не менее, процессоры общего 
+                                назначения проектируют только МЦСТ (например, процесор Эльбрус-8СВ) и «Байкал Электроникс» 
+                                (например, процессор Baikal-M). На данный момент у РФ имеется только одна 
+                                собственная микроархитектура - Эльбрус 2000 (E2K), на основе которой создаются процессоры Эльбрус. 
+                                Процессор Baikal-M, в свою очередь, базируется на лицензируемых ядрах ARM. Отечественные процессоры 
+                                постепенно входят в нашу повседневную жизнь. Так, например, на процессорах Эльбрус работают сервера МВД.
+                            </p>
+                        </div>  
+                    </div>
+                    <div class="col-auto col-sm-auto col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <div class="wrapMe myItem">
+                            <p>
+                                На данный момент времени производство и введение в эксплуатацию отечественных процессоров 
+                                треубет больших государственных субсидий. Однако создаваемые проекты на базе отечественных чипов 
+                                даже сейчас являются конкурентноспособными. Компании-производители отечественных процессоров, ПО, 
+                                СХД-систем регулярно проводят конференции, встречи, хакатоны для развития инфраструктуры отечественного IT.
+                                Подобные мероприятия созданы как для призыва энтузиастов, так и для налаживания взаимодействия между 
+                                непосредственно разработчиками отечественных решений. Так, например, на базе компании "Ростелеком" 
+                                создан специальный центр для помощи в создании решений на процессорах Эльбрус.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dark text-white">
+        <div class="container addInfo">
+            <p>
+                Примеры продуктов, построенных на базе отечественных процессоров (ПК и СХД):
+            </p>
+        </div>
+    </section>
+
+    <section class="bg-dark text-white">
+        <div class="container" style="display: flex;justify-content: center;">
+            <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="/images/shdBitblaze.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block" style="background-color: rgba(204, 204, 204, 0.5);border-radius: 7px;">
+                            <h5>CХД Sirius 8012SS</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="/images/SafeRAYBM.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block" style="background-color: rgba(204, 204, 204, 0.5);border-radius: 7px;">
+                            <h5>Моноблок SafeRAY на базе Baikal-M</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="/images/SafeRayS301E8C.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block" style="background-color: rgba(204, 204, 204, 0.5);border-radius: 7px;">
+                            <h5>ПК SafeRAY S301 на базе Эльбрус-8С</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dark text-white">
+        <div class="container">
+            <div class="d-flex flex-column flex-sm-column flex-md-row flex-lg-row flex-xl-row flex-xxl-row" style="padding-top: 15px; padding-bottom: 15px;">
+                <div class="col-auto col-sm-auto col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <div style="max-width: min-content; padding-top: 15px; padding-bottom: 15px;">
+                        <p style="justify-content: center; text-align: center; font-size: larger;">Гимн РФ для поднятия патриотических настроений</p>
+                        <div style="display: flex; flex-direction: row;">
+                            <audio id="audio">
+                                <source src="songs/gimn.mp3" type="audio/mp3">
+                            </audio>
+                            <button type="button" class="btn btn-outline-success" id='playPause' onclick="playPauseF()" style="min-width: 75px; margin: 7px;">Play</button>
+                            <button type="button" class="btn btn-outline-success" onclick="stopF()" style="min-width: 75px; margin: 7px;">Stop</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto col-sm-auto col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <ul class="list-group" style="padding-top: 15px; padding-bottom: 15px; min-width: 30%;">
+                        <li class="list-group-item bg-secondary text-white">Список интересных тематических статей на habr.com</li>
+                        <li class="list-group-item" style="background-color: rgba(204, 204, 204, 0.9);"><a href="https://habr.com/ru/company/rostelecom/blog/562858/" class="link-success">Портирования Reindexer'а на Эльбрус</a></li>
+                        <li class="list-group-item" style="background-color: rgba(204, 204, 204, 0.9);"><a href="https://habr.com/ru/company/oleg-bunin/blog/584628/" class="link-success">Архитектурные особенности процессоров Эльбрус</a></li>
+                        <li class="list-group-item" style="background-color: rgba(204, 204, 204, 0.9);"><a href="https://habr.com/ru/company/icl_services/blog/558564/" class="link-success">Сравнение процессоров Байкал-М и Эльбрус-8СВ</a></li>
+                        <li class="list-group-item" style="background-color: rgba(204, 204, 204, 0.9);"><a href="https://habr.com/ru/company/first/blog/590329/" class="link-success">Распространение отечественных CPU в серверах</a></li>
+                        <li class="list-group-item" style="background-color: rgba(204, 204, 204, 0.9);"><a href="https://habr.com/ru/company/rostelecom/news/t/589139/" class="link-success">Российское облако на отечественных процессорах</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dark text-white">
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+                <p class="col-md-4 mb-0 text-muted">Курсовая работа 2021</p>
+        
+                <button type="button" class="btn btn-outline-success" id="aboutDev" onclick="createPopup('popup')">О разработчике</button>
+                <button type="button" class="btn btn-outline-success" onclick="goUp()">Наверх</button>
+
+                <ul class="nav col-md-4 justify-content-end">
+                    <li class="nav-item"><a href="examples.html" class="nav-link px-2 text-muted">Представители</a></li>
+                    <li class="nav-item"><a href="architecture.html" class="nav-link px-2 text-muted">Архитектуры</a></li>
+                    <li class="nav-item"><a href="russia.html" class="nav-link px-2 text-muted">Отечественные разработки</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">О сайте</a></li>
+                </ul>
+            </footer>
+        </div>
+    </section>
+
+    <section id="popup" class="bg-dark text-white">
+        <div id="headerBlock">
+            <h2 id="headerAbout">О разработчике</h2>
+            <div class="exitButton" onclick="closePopup('popup')">
+                <h2>X</h2>
+            </div>
+        </div>
+        <div id="popupDiv">
+            <p>Курсовая работа выполнена студентом ИКБО-01-20 Ляшенко Виктором</p>
+        </div>
+    </section>
+
+    <!-- JavaScript Bundle with Popper -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/player.js"></script>
+</body>
+</html>

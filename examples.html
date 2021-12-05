@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+	<!-- Style -->
+
+	<link rel="stylesheet" href="./css/style.css">
+
+	<!-- Favicon -->
+
+	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+    <!-- CSS only -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+	<title>Современные процессоры</title>
+</head>
+<body class="mb-n4">
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" id="brand" href="index.html">
+                    <img src="images/cpu1.png" alt="" width="50px" height="50px">
+                </a>
+                <a class="navbar-brand" href="index.html">AllAboutCPUs</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="examples.html">Представители</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="architecture.html">Архитектуры</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="russia.html">Отечественные разработки</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">О сайте</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Поиск процессора" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Поиск</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="bg-dark text-white">
+        <div class="container">
+            <div class="row rowWrapper">
+                <div class="col-lg-3 col-md-6 col-sm-6 wrapMe">
+                    <div class="card bg-secondary text-white">
+                        <img class="card-img-top img-fluid" src="images/i510.jpeg" alt="Card image cap">
+                        <div class="card-block fixCardBlock">
+                            <div class="cardBody">
+                                <h4 class="card-title">Intel Core i5 10400</h4>
+                                <p class="card-text fixText">Процессоры Intel Core 10-го поколения обеспечивают высокую производительность для всех задач</p>
+                            </div>
+                            <button class="btn btn-success fixButton" onclick="createPopup('popup1')">Все характеристики</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 wrapMe">
+                    <div class="card bg-secondary text-white">
+                        <img class="card-img-top img-fluid" src="images/ryzen5.png" alt="Card image cap">
+                        <div class="card-block fixCardBlock">
+                            <div class="cardBody">
+                                <h4 class="card-title">AMD Ryzen 5 5600X</h4>
+                                <p class="card-text fixText">AMD Ryzen серии 5000 — игровые процессоры с самым высоким рейтингом в мире</p>
+                            </div>
+                            <button class="btn btn-success fixButton" onclick="createPopup('popup2')">Все характеристики</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 wrapMe">
+                    <div class="card bg-secondary text-white">
+                        <img class="card-img-top img-fluid" src="images/ixeon.jpeg" alt="Card image cap">
+                        <div class="card-block fixCardBlock">
+                            <div class="cardBody">
+                                <h4 class="card-title">Intel Xeon W 2255</h4>
+                                <p class="card-text fixText">
+                                    Процессоры Intel Xeon серии W предназначены для профессиональных создателей контента
+                                </p>
+                            </div>
+                            <button class="btn btn-success fixButton" onclick="createPopup('popup3')">Все характеристики</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 wrapMe">
+                    <div class="card bg-secondary text-white">
+                        <img class="card-img-top img-fluid" src="images/threadripper.jpeg" alt="Card image cap">
+                        <div class="card-block fixCardBlock">
+                            <div class="cardBody">
+                                <h4 class="card-title">AMD Threadripper 3970X</h4>
+                                <p class="card-text fixText">Реализуйте ваши творческие замыслы с самыми мощными в мире процессорами для настольных ПК</p>
+                            </div>
+                            <button class="btn btn-success fixButton" onclick="createPopup('popup4')">Все характеристики</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 wrapMe">
+                    <div class="card bg-secondary text-white">
+                        <img class="card-img-top img-fluid" src="images/i910.jpeg" alt="Card image cap">
+                        <div class="card-block fixCardBlock">
+                            <div class="cardBody">
+                                <h4 class="card-title">Intel Core i9 10900</h4>
+                                <p class="card-text fixText">Десятиядерный двадцатипоточный процессор Intel обеспечивает бесперебойную производительность в любых ситуациях</p>
+                            </div>
+                            <button class="btn btn-success fixButton" onclick="createPopup('popup5')">Все характеристики</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 wrapMe">
+                    <div class="card bg-secondary text-white">
+                        <img class="card-img-top img-fluid" src="images/ixeon3647.png" alt="Card image cap">
+                        <div class="card-block fixCardBlock">
+                            <div class="cardBody">
+                                <h4 class="card-title">Intel Xeon Silver 4208</h4>
+                                <p class="card-text fixText">Серверный процессор Intel Xeon Silver 4208 обеспечит вам высокую надежность и работу в экстремальных условиях</p>
+                            </div>
+                            <button class="btn btn-success fixButton" onclick="createPopup('popup6')">Все характеристики</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 wrapMe">
+                    <div class="card bg-secondary text-white">
+                        <img class="card-img-top img-fluid" src="images/i310.jpeg" alt="Card image cap">
+                        <div class="card-block fixCardBlock">
+                            <div class="cardBody">
+                                <h4 class="card-title">Intel Core i3 10105</h4>
+                                <p class="card-text fixText">Этот процессор подойдет для сборки мощного оборудования, рассчитанного на эффективную работу с множеством приложений</p>
+                            </div>
+                            <button class="btn btn-success fixButton" onclick="createPopup('popup7')">Все характеристики</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 wrapMe">
+                    <div class="card bg-secondary text-white">
+                        <img class="card-img-top img-fluid" src="images/G6605.jpeg" alt="Card image cap">
+                        <div class="card-block fixCardBlock">
+                            <div class="cardBody">
+                                <h4 class="card-title">Intel Pentium G6605</h4>
+                                <p class="card-text fixText">Процессор со сбалансированной производительностью. Можно использовать его для создания домашних и офисных сборок</p>
+                            </div>
+                            <button class="btn btn-success fixButton" onclick="createPopup('popup8')">Все характеристики</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dark text-white">
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+                <p class="col-md-4 mb-0 text-muted">Курсовая работа 2021</p>
+        
+                <button type="button" class="btn btn-outline-success" id="aboutDev" onclick="createPopup('popup')">О разработчике</button>
+                <button type="button" class="btn btn-outline-success" onclick="goUp()">Наверх</button>
+
+                <ul class="nav col-md-4 justify-content-end">
+                    <li class="nav-item"><a href="examples.html" class="nav-link px-2 text-muted">Представители</a></li>
+                    <li class="nav-item"><a href="architecture.html" class="nav-link px-2 text-muted">Архитектуры</a></li>
+                    <li class="nav-item"><a href="russia.html" class="nav-link px-2 text-muted">Отечественные разработки</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">О сайте</a></li>
+                </ul>
+            </footer>
+        </div>
+    </section>
+
+    <section id="popup" class="bg-dark text-white">
+        <div id="headerBlock">
+            <h2 id="headerAbout">О разработчике</h2>
+            <div class="exitButton" onclick="closePopup('popup')">
+                <h2>X</h2>
+            </div>
+        </div>
+        <div id="popupDiv">
+            <p>Курсовая работа выполнена студентом ИКБО-01-20 Ляшенко Виктором</p>
+        </div>
+    </section>
+
+    <section id="popup1" class="bg-dark text-white">
+        <div id="headerBlock1">
+            <h2 id="headerAbout1">Характеристики i5 10400</h2>
+            <div class="exitButton" onclick="closePopup('popup1')">
+                <h2>X</h2>
+            </div>
+        </div>
+        <div id="popupDiv1">
+            <table class="table table-bordered text-white">
+                <h4>Основное</h4>
+                <tbody>
+                    <tr>
+                        <td style="width: 50%">Серия</td>
+                        <td style="width: 50%">Core i5</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Кодовое название</td>
+                        <td style="width: 50%">Comet Lake</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Разъем</td>
+                        <td style="width: 50%">Intel LGA 1200</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Техпроцесс</td>
+                        <td style="width: 50%">14 нм</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered text-white">
+                <h4>Ядра и потоки</h4>
+                <tbody>
+                    <tr>
+                        <td style="width: 50%">Кол-во ядер</td>
+                        <td style="width: 50%">6</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Кол-во потоков</td>
+                        <td style="width: 50%">12</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Hyper-threading</td>
+                        <td style="width: 50%">+</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered text-white">
+                <h4>Частота</h4>
+                <tbody>
+                    <tr>
+                        <td style="width: 50%">Тактовая частота</td>
+                        <td style="width: 50%">2.9 ГГц</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Частота TurboBoost/Turbo Core</td>
+                        <td style="width: 50%">4.3 ГГц</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="popup2" class="bg-dark text-white">
+        <div id="headerBlock2">
+            <h2 id="headerAbout2">Характеристики R5 5600X</h2>
+            <div class="exitButton" onclick="closePopup('popup2')">
+                <h2>X</h2>
+            </div>
+        </div>
+        <div id="popupDiv2">
+            <table class="table table-bordered text-white">
+                <h4>Основное</h4>
+                <tbody>
+                    <tr>
+                        <td style="width: 50%">Серия</td>
+                        <td style="width: 50%">Ryzen 5</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Кодовое название</td>
+                        <td style="width: 50%">Vermeer (Zen 3)</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Разъем</td>
+                        <td style="width: 50%">AMD AM4</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Техпроцесс</td>
+                        <td style="width: 50%">7 нм</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered text-white">
+                <h4>Ядра и потоки</h4>
+                <tbody>
+                    <tr>
+                        <td style="width: 50%">Кол-во ядер</td>
+                        <td style="width: 50%">6</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Кол-во потоков</td>
+                        <td style="width: 50%">12</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">SMT</td>
+                        <td style="width: 50%">+</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered text-white">
+                <h4>Частота</h4>
+                <tbody>
+                    <tr>
+                        <td style="width: 50%">Тактовая частота</td>
+                        <td style="width: 50%">3.7 ГГц</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Частота TurboBoost/Turbo Core</td>
+                        <td style="width: 50%">4.6 ГГц</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="popup3" class="bg-dark text-white">
+        <div id="headerBlock3">
+            <h2 id="headerAbout3">Характеристики Xeon W 2255</h2>
+            <div class="exitButton" onclick="closePopup('popup3')">
+                <h2>X</h2>
+            </div>
+        </div>
+        <div id="popupDiv3">
+            <table class="table table-bordered text-white">
+                <h4>Основное</h4>
+                <tbody>
+                    <tr>
+                        <td style="width: 50%">Серия</td>
+                        <td style="width: 50%">Xeon W</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Кодовое название</td>
+                        <td style="width: 50%">Cascade Lake</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Разъем</td>
+                        <td style="width: 50%">Intel LGA 2066</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Техпроцесс</td>
+                        <td style="width: 50%">14 нм</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered text-white">
+                <h4>Ядра и потоки</h4>
+                <tbody>
+                    <tr>
+                        <td style="width: 50%">Кол-во ядер</td>
+                        <td style="width: 50%">10</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Кол-во потоков</td>
+                        <td style="width: 50%">20</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Hyper-threading</td>
+                        <td style="width: 50%">+</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered text-white">
+                <h4>Частота</h4>
+                <tbody>
+                    <tr>
+                        <td style="width: 50%">Тактовая частота</td>
+                        <td style="width: 50%">3.7 ГГц</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Частота TurboBoost/Turbo Core</td>
+                        <td style="width: 50%">4.5 ГГц</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="popup4" class="bg-dark text-white">
+        <div id="headerBlock4">
+            <h2 id="headerAbout4">Характеристики Threadripper 3970X</h2>
+            <div class="exitButton" onclick="closePopup('popup4')">
+                <h2>X</h2>
+            </div>
+        </div>
+        <div id="popupDiv4">
+            <table class="table table-bordered text-white">
+                <h4>Основное</h4>
+                <tbody>
+                    <tr>
+                        <td style="width: 50%">Серия</td>
+                        <td style="width: 50%">Ryzen Threadripper</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Кодовое название</td>
+                        <td style="width: 50%">Castle Peak (Zen 2)</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Разъем</td>
+                        <td style="width: 50%">AMD TRX4</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Техпроцесс</td>
+                        <td style="width: 50%">7 нм</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered text-white">
+                <h4>Ядра и потоки</h4>
+                <tbody>
+                    <tr>
+                        <td style="width: 50%">Кол-во ядер</td>
+                        <td style="width: 50%">32</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Кол-во потоков</td>
+                        <td style="width: 50%">64</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">SMT</td>
+                        <td style="width: 50%">+</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered text-white">
+                <h4>Частота</h4>
+                <tbody>
+                    <tr>
+                        <td style="width: 50%">Тактовая частота</td>
+                        <td style="width: 50%">3.7 ГГц</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Частота TurboBoost/Turbo Core</td>
+                        <td style="width: 50%">4.5 ГГц</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="popup5" class="bg-dark text-white">
+        <div id="headerBlock5">
+            <h2 id="headerAbout5">Характеристики i9 10900</h2>
+            <div class="exitButton" onclick="closePopup('popup5')">
+                <h2>X</h2>
+            </div>
+        </div>
+        <div id="popupDiv5">
+            <table class="table table-bordered text-white">
+                <h4>Основное</h4>
+                <tbody>
+                    <tr>
+                        <td style="width: 50%">Серия</td>
+                        <td style="width: 50%">Core i9</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Кодовое название</td>
+                        <td style="width: 50%">Comet Lake</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Разъем</td>
+                        <td style="width: 50%">Intel LGA 1200</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Техпроцесс</td>
+                        <td style="width: 50%">14 нм</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered text-white">
+                <h4>Ядра и потоки</h4>
+                <tbody>
+                    <tr>
+                        <td style="width: 50%">Кол-во ядер</td>
+                        <td style="width: 50%">10</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Кол-во потоков</td>
+                        <td style="width: 50%">20</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Hyper-threading</td>
+                        <td style="width: 50%">+</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered text-white">
+                <h4>Частота</h4>
+                <tbody>
+                    <tr>
+                        <td style="width: 50%">Тактовая частота</td>
+                        <td style="width: 50%">2.8 ГГц</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Частота TurboBoost/Turbo Core</td>
+                        <td style="width: 50%">5 ГГц</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="popup6" class="bg-dark text-white">
+        <div id="headerBlock6">
+            <h2 id="headerAbout6">Характеристики Xeon Silver 4208</h2>
+            <div class="exitButton" onclick="closePopup('popup6')">
+                <h2>X</h2>
+            </div>
+        </div>
+        <div id="popupDiv6">
+            <table class="table table-bordered text-white">
+                <h4>Основное</h4>
+                <tbody>
+                    <tr>
+                        <td style="width: 50%">Серия</td>
+                        <td style="width: 50%">Xeon Silver</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Кодовое название</td>
+                        <td style="width: 50%">Cascade Lake</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Разъем</td>
+                        <td style="width: 50%">Intel LGA 3647</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Техпроцесс</td>
+                        <td style="width: 50%">14 нм</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered text-white">
+                <h4>Ядра и потоки</h4>
+                <tbody>
+                    <tr>
+                        <td style="width: 50%">Кол-во ядер</td>
+                        <td style="width: 50%">8</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Кол-во потоков</td>
+                        <td style="width: 50%">16</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Hyper-threading</td>
+                        <td style="width: 50%">+</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered text-white">
+                <h4>Частота</h4>
+                <tbody>
+                    <tr>
+                        <td style="width: 50%">Тактовая частота</td>
+                        <td style="width: 50%">2.1 ГГц</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Частота TurboBoost/Turbo Core</td>
+                        <td style="width: 50%">3.2 ГГц</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="popup7" class="bg-dark text-white">
+        <div id="headerBlock7">
+            <h2 id="headerAbout7">Характеристики i3 10105</h2>
+            <div class="exitButton" onclick="closePopup('popup7')">
+                <h2>X</h2>
+            </div>
+        </div>
+        <div id="popupDiv7">
+            <table class="table table-bordered text-white">
+                <h4>Основное</h4>
+                <tbody>
+                    <tr>
+                        <td style="width: 50%">Серия</td>
+                        <td style="width: 50%">Core i3</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Кодовое название</td>
+                        <td style="width: 50%">Comet Lake Refresh</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Разъем</td>
+                        <td style="width: 50%">Intel LGA 1200</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Техпроцесс</td>
+                        <td style="width: 50%">14 нм</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered text-white">
+                <h4>Ядра и потоки</h4>
+                <tbody>
+                    <tr>
+                        <td style="width: 50%">Кол-во ядер</td>
+                        <td style="width: 50%">4</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Кол-во потоков</td>
+                        <td style="width: 50%">8</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Hyper-threading</td>
+                        <td style="width: 50%">+</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered text-white">
+                <h4>Частота</h4>
+                <tbody>
+                    <tr>
+                        <td style="width: 50%">Тактовая частота</td>
+                        <td style="width: 50%">3.7 ГГц</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Частота TurboBoost/Turbo Core</td>
+                        <td style="width: 50%">4.4 ГГц</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="popup8" class="bg-dark text-white">
+        <div id="headerBlock8">
+            <h2 id="headerAbout8">Все характеристики</h2>
+            <div class="exitButton" onclick="closePopup('popup8')">
+                <h2>X</h2>
+            </div>
+        </div>
+        <div id="popupDiv8">
+            <table class="table table-bordered text-white">
+                <h4>Основное</h4>
+                <tbody>
+                    <tr>
+                        <td style="width: 50%">Серия</td>
+                        <td style="width: 50%">Pentium</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Кодовое название</td>
+                        <td style="width: 50%">Comet Lake Refresh</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Разъем</td>
+                        <td style="width: 50%">Intel LGA 1200</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Техпроцесс</td>
+                        <td style="width: 50%">14 нм</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered text-white">
+                <h4>Ядра и потоки</h4>
+                <tbody>
+                    <tr>
+                        <td style="width: 50%">Кол-во ядер</td>
+                        <td style="width: 50%">2</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Кол-во потоков</td>
+                        <td style="width: 50%">4</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Hyper-threading</td>
+                        <td style="width: 50%">+</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered text-white">
+                <h4>Частота</h4>
+                <tbody>
+                    <tr>
+                        <td style="width: 50%">Тактовая частота</td>
+                        <td style="width: 50%">4.3 ГГц</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">Частота TurboBoost/Turbo Core</td>
+                        <td style="width: 50%">TurboBoost отсутствует</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- JavaScript Bundle with Popper -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

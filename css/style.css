@@ -1,0 +1,608 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+#brand {
+    width:150px;
+    font-size: 24px;
+}
+
+#brand img {
+    height: 50px;
+    width: 50px;
+    float: right;
+    margin-right: 7px;
+}
+
+#carousel1 {
+    width: auto;
+    max-width: 300px;
+    min-height: 50px;
+    max-height: 300px;
+    margin: 10px;
+}
+
+#carousel2 {
+    width: auto;
+    max-width: 480px;
+    min-height: 200px;
+    max-height: 800px;
+    padding: 10px;
+}
+
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 3px solid gray;
+    border-radius: 15px;
+    z-index: 10;
+    max-width: 80%;
+    padding: 5px;
+}
+
+#headerBlock {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+#headerBlock #headerAbout {
+    display: flex;
+    margin: 0px;
+    font-size: 32px;
+}
+
+.exitButton {
+    margin: 3px;
+    height: 32px;
+    width: 32px;
+    min-height: 32px;
+    min-width: 32px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #198754;
+    border-color: #198754;
+    transition: color .15s ease-in-out,
+        background-color .15s ease-in-out,
+        border-color .15s ease-in-out,
+        box-shadow .15s ease-in-out;
+}
+
+.exitButton:hover {
+    box-shadow: 0 0 0 1px #198754;
+    background: #198754;
+    cursor: pointer;
+    color: white;
+}
+
+.exitButton h2 {
+    font-size: 32px;
+    margin: 0px;
+}
+
+#popup #popupDiv p {
+    font-size: 16px;
+}
+
+#myData div p {
+    margin-bottom: 0px;
+}
+
+#myData1 div p {
+    margin-bottom: 0px;
+}
+
+.leftimg {
+    height: auto;
+    max-width: 240px;
+    max-height: 203px;
+    display: block;
+    float: left;
+    margin: 15px 15px 15px 0px;
+}
+
+.rightimg {
+    height: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+    max-width: 240px;
+    max-height: 203px;
+    display: block;
+    float: right;
+    margin: 15px 0px 15px 15px;
+}
+
+#myData div div p {
+    font-size: larger;
+}
+
+#myData1 div div p {
+    font-size: larger;
+}
+
+#myData1 div div ul li {
+    font-size: larger;
+}
+
+.myItem {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+}
+
+.item1 {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+}
+  
+.item2 {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: right;
+}
+
+.item1m {
+    margin: 25px 0px 25px 0px;
+}
+
+.item2m {
+    margin: 25px 0px 25px 0px;
+}
+
+#changePadding {
+    padding: 40px;
+}
+
+#changePadding1 {
+    padding: 20px;
+}
+
+#fixSize {
+    max-width: 1000px;
+}
+
+@media (max-width: 768px) {
+    #brand {
+        display: none;
+    }
+
+    #myData div div p {
+        text-align: justify;
+        margin: 15px;
+    }
+
+    #myData1 div div p {
+        text-align: justify;
+        margin: 15px;
+    }
+
+    #changePadding {
+        padding: 10px !important;
+    }
+
+    #changePadding1 {
+        padding: 10px !important;
+    }
+
+    #changePadding2 {
+        padding: 10px !important;
+    }
+}
+
+@media (max-width: 1000px) {
+    .wrapMe {
+        margin: 0px !important;
+        margin-bottom: 15px !important;
+        padding: 0px 0px 0px 0px !important;
+        justify-content: space-around !important;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+ 
+.row > div[class*='col-'] {
+    display: flex;
+}
+
+.card {
+    height: 100%;
+    margin: 10px;
+    max-width: 25vh;
+    border-bottom-left-radius: 15px !important;
+    border-bottom-right-radius: 15px !important;
+}
+
+.wrapMe {
+    margin: 10px;
+    margin-bottom: 15px;
+    padding: 0px 0px 0px 0px;
+    justify-content: space-around;
+}
+
+.card img {
+    background-color: whitesmoke;
+}
+
+.addInfo {
+    display: flex;
+    justify-content: space-around;
+    font-size: larger;
+    text-align: center;
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+.fixCardBlock {
+    padding: 1vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.fixText {
+    flex-grow: 1;
+    text-align: justify;
+}
+
+.fixButton {
+    align-self:flex-end;
+    width: 100%;
+}
+
+.cardBody{ 
+    display:flex;
+    flex-direction:column;
+    flex-basis:100%;
+    flex-grow: 10;
+}
+
+#popup1 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    visibility: hidden;
+    transition: 200ms ease-in-out;
+    border: 3px solid gray;
+    border-radius: 15px;
+    z-index: 10;
+    min-width: 50%;
+    max-width: 80%;
+    padding: 5px;
+}
+
+#headerBlock1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#headerBlock1 #headerAbout1 {
+    display: flex;
+    margin: 0px;
+    font-size: 32px;
+}
+
+#popup1 #popupDiv1 p {
+    font-size: 16px;
+}
+
+.activePopup {
+    transform: translate(-50%, -50%) scale(1) !important;
+    visibility: visible !important;
+}
+
+#popup2 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    visibility: hidden;
+    transition: 200ms ease-in-out;
+    border: 3px solid gray;
+    border-radius: 15px;
+    z-index: 10;
+    min-width: 50%;
+    max-width: 80%;
+    padding: 5px;
+}
+
+#headerBlock2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#headerBlock2 #headerAbout2 {
+    display: flex;
+    margin: 0px;
+    font-size: 32px;
+}
+
+#popup2 #popupDiv2 p {
+    font-size: 16px;
+}
+
+#popup3 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    visibility: hidden;
+    transition: 200ms ease-in-out;
+    border: 3px solid gray;
+    border-radius: 15px;
+    z-index: 10;
+    min-width: 50%;
+    max-width: 80%;
+    padding: 5px;
+}
+
+#headerBlock3 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#headerBlock3 #headerAbout1 {
+    display: flex;
+    margin: 0px;
+    font-size: 32px;
+}
+
+#popup3 #popupDiv3 p {
+    font-size: 16px;
+}
+
+#popup4 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    visibility: hidden;
+    transition: 200ms ease-in-out;
+    border: 3px solid gray;
+    border-radius: 15px;
+    z-index: 10;
+    min-width: 50%;
+    max-width: 80%;
+    padding: 5px;
+}
+
+#headerBlock4 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#headerBlock4 #headerAbout4 {
+    display: flex;
+    margin: 0px;
+    font-size: 32px;
+}
+
+#popup4 #popupDiv4 p {
+    font-size: 16px;
+}
+
+#popup5 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    visibility: hidden;
+    transition: 200ms ease-in-out;
+    border: 3px solid gray;
+    border-radius: 15px;
+    z-index: 10;
+    min-width: 50%;
+    max-width: 80%;
+    padding: 5px;
+}
+
+#headerBlock5 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#headerBlock5 #headerAbout5 {
+    display: flex;
+    margin: 0px;
+    font-size: 32px;
+}
+
+#popup5 #popupDiv5 p {
+    font-size: 16px;
+}
+
+#popup6 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    visibility: hidden;
+    transition: 200ms ease-in-out;
+    border: 3px solid gray;
+    border-radius: 15px;
+    z-index: 10;
+    min-width: 50%;
+    max-width: 80%;
+    padding: 5px;
+}
+
+#headerBlock6 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#headerBlock6 #headerAbout6 {
+    display: flex;
+    margin: 0px;
+    font-size: 32px;
+}
+
+#popup6 #popupDiv6 p {
+    font-size: 16px;
+}
+
+#popup7 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    visibility: hidden;
+    transition: 200ms ease-in-out;
+    border: 3px solid gray;
+    border-radius: 15px;
+    z-index: 10;
+    min-width: 50%;
+    max-width: 80%;
+    padding: 5px;
+}
+
+#headerBlock7 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#headerBlock7 #headerAbout7 {
+    display: flex;
+    margin: 0px;
+    font-size: 32px;
+}
+
+#popup7 #popupDiv7 p {
+    font-size: 16px;
+}
+
+#popup8 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    visibility: hidden;
+    transition: 200ms ease-in-out;
+    border: 3px solid gray;
+    border-radius: 15px;
+    z-index: 10;
+    min-width: 50%;
+    max-width: 80%;
+    padding: 5px;
+}
+
+#headerBlock8 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#headerBlock8 #headerAbout8 {
+    display: flex;
+    margin: 0px;
+    font-size: 32px;
+}
+
+#popup8 #popupDiv8 p {
+    font-size: 16px;
+}
+
+.blurMe {
+    filter: blur(3px);
+}
+
+.unblurMe {
+    filter: blur(0px);
+}
+
+#changePadding2 {
+    padding-bottom: 15px;
+}
+
+#feedbackForm {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    visibility: hidden;
+    transition: 200ms ease-in-out;
+    border: 3px solid gray;
+    border-radius: 15px;
+    z-index: 10;
+    min-width: 50%;
+    max-width: 65%;
+    padding: 5px;
+}
+
+.hideMeNow {
+    display: none !important;
+}
+
+.unvisibleMe {
+    visibility: hidden !important;
+}
+
+textarea:required:invalid, input:required:invalid {
+    background-color: lightcoral;
+}
+
+.snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #198754;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+}
+  
+.showSnackbar {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+  
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+  
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
