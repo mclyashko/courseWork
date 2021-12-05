@@ -41,6 +41,8 @@ body {
     z-index: 10;
     max-width: 80%;
     padding: 5px;
+    max-height: 90%;
+    overflow-y: scroll;
 }
 
 #headerBlock {
@@ -284,6 +286,8 @@ body {
     min-width: 50%;
     max-width: 80%;
     padding: 5px;
+    max-height: 90%;
+    overflow-y: scroll;
 }
 
 #headerBlock1 {
@@ -322,6 +326,8 @@ body {
     min-width: 50%;
     max-width: 80%;
     padding: 5px;
+    max-height: 90%;
+    overflow-y: scroll;
 }
 
 #headerBlock2 {
@@ -355,6 +361,8 @@ body {
     min-width: 50%;
     max-width: 80%;
     padding: 5px;
+    max-height: 90%;
+    overflow-y: scroll;
 }
 
 #headerBlock3 {
@@ -388,6 +396,8 @@ body {
     min-width: 50%;
     max-width: 80%;
     padding: 5px;
+    max-height: 90%;
+    overflow-y: scroll;
 }
 
 #headerBlock4 {
@@ -421,6 +431,8 @@ body {
     min-width: 50%;
     max-width: 80%;
     padding: 5px;
+    max-height: 90%;
+    overflow-y: scroll;
 }
 
 #headerBlock5 {
@@ -454,6 +466,8 @@ body {
     min-width: 50%;
     max-width: 80%;
     padding: 5px;
+    max-height: 90%;
+    overflow-y: scroll;
 }
 
 #headerBlock6 {
@@ -487,6 +501,8 @@ body {
     min-width: 50%;
     max-width: 80%;
     padding: 5px;
+    max-height: 90%;
+    overflow-y: scroll;
 }
 
 #headerBlock7 {
@@ -520,6 +536,8 @@ body {
     min-width: 50%;
     max-width: 80%;
     padding: 5px;
+    max-height: 90%;
+    overflow-y: scroll;
 }
 
 #headerBlock8 {
@@ -565,6 +583,8 @@ body {
     min-width: 50%;
     max-width: 65%;
     padding: 5px;
+    max-height: 90%;
+    overflow-y: scroll;
 }
 
 .hideMeNow {
